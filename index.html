@@ -73,7 +73,8 @@
     <main class="mx-auto w-[60%]">
       <section class="hero-section">
         <div
-          class="hero text-white bg-[url(./images/banner.png)] bg-center bg-no-repeat bg-cover"
+          style="background-image: url(./images/banner.png)"
+          class="hero text-white bg-[url('./images/banner.png)'] bg-center bg-no-repeat bg-cover"
         >
           <div class="hero-content text-center py-[104px] px-[239px]">
             <h1 class="font-garamond text-7xl font-extrabold mb-6">
@@ -137,7 +138,7 @@
             class="card max-w-[400px] flex flex-col justify-center items-center border-gray-300 border-r border-b pt-14 pb-16 px-16 hover:bg-linear-to-t from-0% to-amber-100"
           >
             <img
-              src="./images/business.png"
+              src="./images/criminal.png"
               alt="business card image"
               class="mb-8"
             />
@@ -157,7 +158,7 @@
             class="card max-w-[400px] flex flex-col justify-center items-center border-gray-300 border-b pt-14 pb-16 px-16 hover:bg-linear-to-t from-0% to-amber-100"
           >
             <img
-              src="./images/business.png"
+              src="./images/child.png"
               alt="business card image"
               class="mb-8"
             />
@@ -177,7 +178,7 @@
             class="card max-w-[400px] flex flex-col justify-center items-center border-gray-300 border-r pt-14 pb-16 px-16 hover:bg-linear-to-t from-0% to-amber-100"
           >
             <img
-              src="./images/business.png"
+              src="./images/education.png"
               alt="business card image"
               class="mb-8"
             />
@@ -197,7 +198,7 @@
             class="card max-w-[400px] flex flex-col justify-center items-center border-r border-gray-300 pt-14 pb-16 px-16 hover:bg-linear-to-t from-0% to-amber-100"
           >
             <img
-              src="./images/business.png"
+              src="./images/divorce.png"
               alt="business card image"
               class="mb-8"
             />
@@ -217,7 +218,7 @@
             class="card max-w-[400px] flex flex-col justify-center items-center pt-14 pb-16 px-16 hover:bg-linear-to-t from-0% to-amber-100"
           >
             <img
-              src="./images/business.png"
+              src="./images/tax.png"
               alt="business card image"
               class="mb-8"
             />
@@ -247,9 +248,13 @@
           </p>
         </div>
         <div
-          class="review-banner flex flex-col justify-center items-center mb-28 h-[500px] text-white bg-[url(./images/banner.png)] bg-center bg-no-repeat bg-cover"
+          style="background-image: url(./images/banner.png)"
+          class="review-banner flex flex-col justify-center items-center mb-28 h-[500px] text-white bg-[url(./images/banner.png)] bg-center bg-no-repeat bg-cover relative"
         >
-          <div class="profile flex flex-col justify-center items-center">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <div
+            class="relative z-10 profile flex flex-col justify-center items-center"
+          >
             <img
               class="w-[80px] h-[80px] p-1 bg-white rounded-full mb-6"
               src="./images/badsha.jpg"
@@ -465,7 +470,7 @@
               class="text-[#111] bg-white py-6 px-8 rounded-full w-[324px] focus:outline-none"
             />
             <button
-              class="bg-amber-400 p-4 rounded-full absolute right-3 top-2 cursor-pointer"
+              class="bg-amber-400 p-4 rounded-full absolute right-3 top-2 cursor-pointer hover:bg-black duration-250"
             >
               <i class="fa-regular fa-paper-plane"></i>
             </button>
