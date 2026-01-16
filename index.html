@@ -28,8 +28,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="mx-auto w-[60%]">
-    <header>
+  <body class="mx-auto">
+    <header class="mx-auto w-[60%]">
       <nav class="flex justify-between items-center mx-auto m-12">
         <div class="logo">
           <a href="#"><img src="./images/logo2.png" alt="Nav Logo" /></a>
@@ -70,7 +70,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mx-auto w-[60%]">
       <section class="hero-section">
         <div
           class="hero text-white bg-[url(/images/banner.png)] bg-center bg-no-repeat bg-cover"
@@ -421,5 +421,57 @@
         </div>
       </section>
     </main>
+    <footer class="bg-[#111111] h-[506px] mx-auto">
+      <div class="footer mx-auto w-[60%] flex justify-between text-white">
+        <div class="footer-logo w-[260px] my-28">
+          <img class="mb-8" src="./images/logo.png" alt="" />
+          <p class="text-[#CFCFCF]">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div class="links w-[127px] my-28">
+          <h3 class="font-garamond font-extrabold text-2xl mb-12">
+            Usefull Link
+          </h3>
+          <div class="link flex flex-col gap-3">
+            <a class="text-[#CFCFCF]" href="#">Home</a>
+            <a class="text-[#CFCFCF]" href="#">About Us</a>
+            <a class="text-[#CFCFCF]" href="#">Cases</a>
+            <a class="text-[#CFCFCF]" href="#">Blog</a>
+            <a class="text-[#CFCFCF]" href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="contact-now w-[216px] my-28">
+          <h3 class="font-garamond font-extrabold text-2xl mb-12">
+            Contact Now
+          </h3>
+          <p class="mb-3 text-[#CFCFCF]">
+            555 4th 5t NW, Washington DC 20530, United States
+          </p>
+          <p class="mb-3 text-[#CFCFCF]">+88 01750 000 000 +88 01750 000 000</p>
+          <p class="text-[#CFCFCF]">info@gmail.com info@gmail.com</p>
+        </div>
+        <div class="subscribe w-[324px] my-28">
+          <h3 class="font-garamond font-extrabold text-2xl mb-12">Subscribe</h3>
+          <p class="mb-6 text-[#CFCFCF]">
+            Subscribe for our latest & Articles. We Won’t Give You Spam Mails
+          </p>
+          <div class="subscribe-btn relative">
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="text-[#111] bg-white py-6 px-8 rounded-full w-[324px] focus:outline-none"
+            />
+            <button
+              class="bg-amber-400 p-4 rounded-full absolute right-3 top-2 cursor-pointer"
+            >
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
